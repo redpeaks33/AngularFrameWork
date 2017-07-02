@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularGUISampleCode</title>
+    <LINK rel="shortcut icon" href="icon.png">
+    <meta charset="utf-8" />
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-ui-router.min.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/helloworld.js"></script>
+    <style>
+        .active {
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+
+    <button class="btn btn-default" ui-sref="page-A">pageA</button>
+    <button class="btn btn-default" ui-sref="page-B">pageB</button>
+    <button class="btn btn-default" ui-sref="page-C">pageC</button>
+    <div ui-view></div>
+
+    
+</body>
+</html>
