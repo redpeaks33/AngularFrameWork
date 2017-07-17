@@ -62,7 +62,7 @@ main.config(['lazyImgConfigProvider', function (lazyImgConfigProvider) {
             //alert('Error');
         }, // function fired on loading error
         onSuccess: function (image) {
-            //alert('Success');
+            alert('Success');
         }, // function fired on loading success
         container: angular.element(scrollable) // if scrollable container is not $window then provide it here
     });
