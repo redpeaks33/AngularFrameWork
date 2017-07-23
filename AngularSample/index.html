@@ -13,28 +13,18 @@
     <script src="/lib/angular-lazy-img-master/release/angular-lazy-img.js"></script>
     <link href="/Content/bootstrap.min.css" rel="stylesheet">
 
+    <!-- bootstrap toggle -->
+    <script src="/lib/angular-bootstrap-toggle-master/dist/angular-bootstrap-toggle.min.js"></script>
+    <link href="/lib/angular-bootstrap-toggle-master/dist/angular-bootstrap-toggle.min.css" rel="stylesheet">
+    
     <script src="/helloworld.js"></script>
-    <style>
-        .active {
-            color: red;
-            font-weight: bolder;
-        }
-        .position{
-            margin-top:400px;
-        }
-    </style>
+    <link href="/switch.css" rel="stylesheet">
 </head>
 <body ng-app="myApp">
     <div id="scrollable" ng-controller="myController">
-        <!--lazy and binary string and compile-->
-        <div compile="convertedImageHtml"></div>
-        <div compile="convertedBinaryImageHtml"></div>
-        <!--lazy and binary string and compile-->
-
-        <button class="btn btn-default" ui-sref="page-A">pageA</button>
-        <button class="btn btn-default" ui-sref="page-B">pageB</button>
-        <button class="btn btn-default" ui-sref="page-C">pageC</button>
-        <div ui-view></div>
+        <toggle ng-model="toggleValue" ng-change="changed()"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Enabled" off="Disabled"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" onstyle="btn-custom" ></toggle>
     </div>
 
     
