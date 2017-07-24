@@ -15,7 +15,7 @@
 
     <!-- bootstrap toggle -->
     <script src="/lib/angular-bootstrap-toggle-master/dist/angular-bootstrap-toggle.min.js"></script>
-    <link href="/lib/angular-bootstrap-toggle-master/dist/angular-bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="/lib/angular-bootstrap-toggle-master/dist/angular-bootstrap-toggle.css" rel="stylesheet">
     
     <script src="/helloworld.js"></script>
     <link href="/switch.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 <body ng-app="myApp">
     <div id="scrollable" ng-controller="myController">
         <toggle ng-model="toggleValue" ng-change="changed()"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="Enabled" off="Disabled"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Enabled" off="Disabled" style="quick" ></toggle>
         <toggle ng-model="toggleValue" ng-change="changed()" onstyle="btn-custom" ></toggle>
     </div>
 
